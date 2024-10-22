@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__EVENTMACHINE: "--with-pkg-config=/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
