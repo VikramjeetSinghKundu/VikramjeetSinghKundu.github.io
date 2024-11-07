@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-01857f88e653e6f90ff5681f5c1ee5c1"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "building_count", "scale": {"scheme": "blues"}, "title": "Building Count", "type": "quantitative"}, "x": {"field": "County", "sort": "-y", "title": "County", "type": "nominal"}, "y": {"field": "building_count", "title": "Number of Buildings", "type": "quantitative"}}, "title": "Distribution of Buildings by County", "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-01857f88e653e6f90ff5681f5c1ee5c1": [{"County": "Adams", "building_count": 78}, {"County": "Alexander", "building_count": 45}, {"County": "Bond", "building_count": 4}, {"County": "Boone", "building_count": 5}, {"County": "Brown", "building_count": 29}, {"County": "Bureau", "building_count": 84}, {"County": "Calhoun", "building_count": 4}, {"County": "Carroll", "building_count": 78}, {"County": "Cass", "building_count": 99}, {"County": "Champaign", "building_count": 416}, {"County": "Christian", "building_count": 80}, {"County": "Clark", "building_count": 37}, {"County": "Clay", "building_count": 5}, {"County": "Clinton", "building_count": 153}, {"County": "Coles", "building_count": 112}, {"County": "Cook", "building_count": 518}, {"County": "Crawford", "building_count": 40}, {"County": "Cumberland", "building_count": 6}, {"County": "DeKalb", "building_count": 99}, {"County": "DeWitt", "building_count": 57}, {"County": "Douglas", "building_count": 22}, {"County": "DuPage", "building_count": 38}, {"County": "Edgar", "building_count": 10}, {"County": "Effingham", "building_count": 38}, {"County": "Fayette", "building_count": 133}, {"County": "Ford", "building_count": 4}, {"County": "Franklin", "building_count": 21}, {"County": "Fulton", "building_count": 79}, {"County": "Gallatin", "building_count": 15}, {"County": "Greene", "building_count": 9}, {"County": "Grundy", "building_count": 45}, {"County": "Hamilton", "building_count": 34}, {"County": "Hancock", "building_count": 31}, {"County": "Hardin", "building_count": 39}, {"County": "Henderson", "building_count": 14}, {"County": "Henry", "building_count": 90}, {"County": "Iroquois", "building_count": 30}, {"County": "Jackson", "building_count": 488}, {"County": "Jasper", "building_count": 61}, {"County": "Jefferson", "building_count": 164}, {"County": "Jersey", "building_count": 241}, {"County": "Jo Daviess", "building_count": 68}, {"County": "Johnson", "building_count": 132}, {"County": "Kane", "building_count": 124}, {"County": "Kankakee", "building_count": 164}, {"County": "Kendall", "building_count": 30}, {"County": "Knox", "building_count": 48}, {"County": "LaSalle", "building_count": 289}, {"County": "Lake", "building_count": 142}, {"County": "Lawrence", "building_count": 58}, {"County": "Lee", "building_count": 161}, {"County": "Livingston", "building_count": 160}, {"County": "Logan", "building_count": 131}, {"County": "Macon", "building_count": 52}, {"County": "Macoupin", "building_count": 30}, {"County": "Madison", "building_count": 180}, {"County": "Marion", "building_count": 59}, {"County": "Marshall", "building_count": 25}, {"County": "Mason", "building_count": 49}, {"County": "Massac", "building_count": 48}, {"County": "McDonough", "building_count": 90}, {"County": "McHenry", "building_count": 133}, {"County": "McLean", "building_count": 188}, {"County": "Menard", "building_count": 85}, {"County": "Mercer", "building_count": 4}, {"County": "Monroe", "building_count": 11}, {"County": "Montgomery", "building_count": 74}, {"County": "Morgan", "building_count": 88}, {"County": "Moultrie", "building_count": 25}, {"County": "Ogle", "building_count": 107}, {"County": "Peoria", "building_count": 183}, {"County": "Perry", "building_count": 127}, {"County": "Piatt", "building_count": 8}, {"County": "Pike", "building_count": 19}, {"County": "Pope", "building_count": 55}, {"County": "Pulaski", "building_count": 4}, {"County": "Putnam", "building_count": 1}, {"County": "Randolph", "building_count": 440}, {"County": "Richland", "building_count": 6}, {"County": "Rock Island", "building_count": 80}, {"County": "Saline", "building_count": 57}, {"County": "Sangamon", "building_count": 437}, {"County": "Schuyler", "building_count": 28}, {"County": "Scott", "building_count": 5}, {"County": "Shelby", "building_count": 66}, {"County": "St. Clair", "building_count": 109}, {"County": "Stark", "building_count": 8}, {"County": "Statewide", "building_count": 13}, {"County": "Stephenson", "building_count": 34}, {"County": "Tazewell", "building_count": 37}, {"County": "Union", "building_count": 110}, {"County": "Vermilion", "building_count": 128}, {"County": "Wabash", "building_count": 7}, {"County": "Warren", "building_count": 7}, {"County": "Washington", "building_count": 40}, {"County": "Wayne", "building_count": 20}, {"County": "White", "building_count": 14}, {"County": "Whiteside", "building_count": 84}, {"County": "Will", "building_count": 293}, {"County": "Williamson", "building_count": 23}, {"County": "Winnebago", "building_count": 60}, {"County": "Woodford", "building_count": 24}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
