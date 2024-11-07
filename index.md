@@ -4,7 +4,7 @@
 
 This bar chart visualizes the number of government buildings across different counties in Illinois. The goal is to highlight which counties have a higher concentration of government-owned buildings, allowing us to easily spot the distribution pattern across the state. I used a blue gradient color scheme to encode the building count, with darker shades representing counties with more buildings. This color scheme helps quickly identify counties with higher numbers of government properties.
 
-To prepare the data for this visualization, I grouped the dataset by the “County” column and calculated the count of buildings for each county. This aggregated data allowed us to create a simplified view that focuses on building concentration rather than individual building details. We chose a bar chart for its simplicity and effectiveness in showing count-based distributions across categorical values like county names. No transformations were done on the building count values, as they were aggregated directly from the dataset.
+To prepare the data for this visualization, I grouped the dataset by the “County” column and calculated the count of buildings for each county. This aggregated data allowed us to create a simplified view that focuses on building concentration rather than individual building details. I chose a bar chart for its simplicity and effectiveness in showing count-based distributions across categorical values like county names. No transformations were done on the building count values, as they were aggregated directly from the dataset.
 
 [View Plot 1](https://VikramjeetSinghKundu.github.io/plot1.html)
 
