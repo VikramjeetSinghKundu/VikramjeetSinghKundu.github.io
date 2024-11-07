@@ -1,10 +1,3 @@
----
-layout: default
-permalink: /
----
-
-{% include landing.html %}
-
 # HW6.1: Visualization of Building Inventory Data
 
 ## Plot 1: Distribution of Buildings by County
@@ -20,6 +13,8 @@ To prepare the data for this visualization, I grouped the dataset by the “Coun
 This scatter plot examines the square footage of buildings based on their construction year, allowing us to explore trends in building sizes over time. Each point represents a building, with the x-axis showing the year it was constructed and the y-axis indicating its square footage. The plot also features an interactive time range filter, which lets users select different time periods to examine trends within specific years. This interactivity makes it easier to observe how building sizes may have evolved over time.
 
 For this plot, I used the “Year Constructed” column for the x-axis and “Square Footage” for the y-axis. To make it more engaging, I added tooltips that display the building’s location name, year constructed and square footage when hovering over each point. This interaction provides additional context without cluttering the main visualization. No additional transformations were necessary beyond filtering the data for non-null square footage and construction year values which ensures that only relevant data is displayed. 
+
+The entire plot is not fitting the screen so a left-right scrolling is required to see the entire visualization.
 
 [View Plot 2](https://VikramjeetSinghKundu.github.io/plot2.html)
 
